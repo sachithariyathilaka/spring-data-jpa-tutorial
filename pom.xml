@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Parent information -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.3.1</version>
+		<relativePath/>
+	</parent>
+
+	<!-- Core information -->
+	<groupId>io.github.sachithariyathilaka</groupId>
+	<artifactId>spring-data-jpa-tutorial</artifactId>
+	<version>1.0.0</version>
+
+	<!-- Packaging information -->
+	<packaging>jar</packaging>
+
+	<!-- Project information -->
+	<name>Spring Data JPA Tutorial</name>
+	<description>Spring boot project for spring data JPA</description>
+	<url>https://github.com/sachithariyathilaka/spring-data-jpa-tutorial</url>
+	<inceptionYear>2024</inceptionYear>
+
+	<!-- License information -->
+	<licenses>
+
+		<license>
+			<name>MIT Licence</name>
+		</license>
+
+	</licenses>
+
+	<!-- Organization information -->
+	<organization>
+		<name>ByteGen Technologies</name>
+		<url>https://github.com/sachithariyathilaka</url>
+	</organization>
+
+	<!-- Developer information -->
+	<developers>
+
+		<developer>
+			<id>1</id>
+			<name>Sachith Ariyathilaka</name>
+			<organization>ByteGen Technologies</organization>
+			<organizationUrl>https://github.com/sachithariyathilaka</organizationUrl>
+			<email>sachith.vidu@yahoo.com</email>
+			<roles>
+				<role>Chairman</role>
+			</roles>
+			<timezone>UTC +5:30</timezone>
+		</developer>
+
+	</developers>
+
+	<!-- Property information -->
+	<properties>
+
+		<!-- Project properties -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>17</java.version>
+
+	</properties>
+
+	<!-- Dependency information -->
+	<dependencies>
+
+		<!-- Starter dependencies -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- Database dependency -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- Lombok dependency -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+	</dependencies>
+
+	<!-- Profile information -->
+	<profiles>
+
+		<profile>
+			<id>tutorial</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+
+	</profiles>
+
+	<!-- Repository information -->
+	<repositories>
+
+		<repository>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+
+	</repositories>
+
+	<!-- Plugin repository information -->
+	<pluginRepositories>
+
+		<pluginRepository>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+		</pluginRepository>
+
+		<pluginRepository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+
+		<pluginRepository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</pluginRepository>
+
+	</pluginRepositories>
+
+	<!-- Build information -->
+	<build>
+
+		<!-- General information -->
+		<directory>${project.basedir}/target</directory>
+		<outputDirectory>${project.build.directory}/classes</outputDirectory>
+		<sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+		<finalName>${project.artifactId}-${project.version}</finalName>
+
+		<!-- Resource information -->
+		<resources>
+
+			<resource>
+				<directory>${basedir}/src/main/resources</directory>
+			</resource>
+
+		</resources>
+
+		<!-- Plugin information -->
+		<plugins>
+
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+		</plugins>
+
+	</build>
+
+	<!-- SCM information -->
+	<scm>
+		<url>https://github.com/sachithariyathilaka/spring-data-jpa-tutorial</url>
+		<connection>scm:git:https://github.com/sachithariyathilaka/spring-data-jpa-tutorial.git</connection>
+		<developerConnection>scm:git:git@github.com:sachithariyathilaka/spring-data-jpa-tutorial.git</developerConnection>
+	</scm>
+
+	<!-- Reporting information -->
+	<reporting>
+		<outputDirectory>${project.build.directory}/site</outputDirectory>
+	</reporting>
+
+</project>
