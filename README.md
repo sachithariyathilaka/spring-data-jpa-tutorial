@@ -21,4 +21,4 @@ Spring Boot project for describe the spring data JPA.
     * Changes
         * Implements the spring data JPA configurations.
         * Implements the basic entities, repositories and service methods.
-        * Implements the required rest endpoints which needs to perform spring data JPA operations.
+        * Implements the save, update, delete, find all, search, native search and JPQL search functionalities related endpoints.
