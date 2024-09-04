@@ -13,8 +13,8 @@ import org.springframework.data.domain.Page;
  */
 public interface BookService {
     Book save(BookRequest bookRequest);
-    Book update(int id, BookRequest bookRequest);
-    void delete(int id);
+    Book update(long id, BookRequest bookRequest);
+    void delete(long id);
     Page<Book> findAll(int page, int size);
     Page<Book> search(int page, int size, String author, String origin);
     Page<Book> nativeSearch(int page, int size, String author, String origin);

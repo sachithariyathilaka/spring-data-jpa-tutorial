@@ -53,7 +53,7 @@ public class BookServiceImpl implements BookService {
      * @return  the updated book
      */
     @Override
-    public Book update(int id, BookRequest bookRequest) {
+    public Book update(long id, BookRequest bookRequest) {
         Optional<Book> optionalBook = bookRepository.findById(id);
         if (optionalBook.isEmpty())
             return null;
@@ -73,7 +73,7 @@ public class BookServiceImpl implements BookService {
      * @param   id the book request
      */
     @Override
-    public void delete(int id) {
+    public void delete(long id) {
         bookRepository.deleteById(id);
     }
 

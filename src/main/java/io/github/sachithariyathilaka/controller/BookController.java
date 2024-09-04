@@ -55,7 +55,7 @@ public class BookController {
      * @return  the new book
      */
     @PutMapping("/")
-    public ResponseEntity<?> update(@RequestParam int id,
+    public ResponseEntity<?> update(@RequestParam long id,
                                     @RequestBody BookRequest bookRequest) {
         APIResponse<Book> apiResponse;
         Book book = bookService.update(id, bookRequest);
@@ -76,9 +76,9 @@ public class BookController {
      * @return  the book id
      */
     @DeleteMapping("/")
-    public ResponseEntity<?> delete(@RequestParam int id) {
+    public ResponseEntity<?> delete(@RequestParam long id) {
         bookService.delete(id);
-        APIResponse<Integer> apiResponse = new APIResponse<>(HttpStatus.OK.value(), "Book deleted successfully!", id);
+        APIResponse<Long> apiResponse = new APIResponse<>(HttpStatus.OK.value(), "Book deleted successfully!", id);
         return new ResponseEntity<>(apiResponse, HttpStatusCode.valueOf(apiResponse.getCode()));
     }
 

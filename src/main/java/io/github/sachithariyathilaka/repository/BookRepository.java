@@ -16,7 +16,7 @@ import org.springframework.stereotype.Repository;
  * @since   2024/06/22
  */
 @Repository
-public interface BookRepository extends JpaRepository<Book, Integer> {
+public interface BookRepository extends JpaRepository<Book, Long> {
     Page<Book> findAllByAuthor(String author, Pageable pageable);
     Page<Book> findAllByOrigin(String origin, Pageable pageable);
     Page<Book> findAllByAuthorAndOrigin(String author, String origin, Pageable pageable);
