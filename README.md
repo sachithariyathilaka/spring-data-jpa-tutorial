@@ -11,7 +11,7 @@ Spring Boot project for describe the spring data JPA.
     * Maven
 
 * ### Documentation
-    * [Medium Story](https://sachithariyathilaka.medium.com/spring-data-jpa-2452d95d8061)
+    * [Read on Medium](https://sachithariyathilaka.medium.com/spring-data-jpa-2452d95d8061)
 
 * ### Release Note
 
