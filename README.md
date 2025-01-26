@@ -10,13 +10,13 @@ Spring Boot project for describe the spring data JPA.
     * Lombok
     * Maven
 
-* ### Configuration
+* ### Documentation
     * [Medium Story](https://sachithariyathilaka.medium.com/spring-data-jpa-2452d95d8061)
 
 * ### Release Note
 
-    * Release: 1.0.0
-    * Date: 2024/06/22
+    * Version: 1.0.0
+    * Release Date: 2024/06/22
     * Module: Spring Data JPA Tutorial
     * Changes
         * Implements the spring data JPA configurations.
